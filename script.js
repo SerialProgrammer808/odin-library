@@ -20,8 +20,10 @@ addBookToLibrary("Pride & Prejudice", "Jane Austen", "fiction", false);
 
 let books = document.querySelectorAll(".book");
 for (let bookNumber = 0; bookNumber < myLibrary.length; bookNumber++) {
-    books[bookNumber].textContent += myLibrary[bookNumber].title;
-    books[bookNumber].textContent += myLibrary[bookNumber].author;
-    books[bookNumber].textContent += myLibrary[bookNumber].genre;
-    books[bookNumber].textContent += myLibrary[bookNumber].read;
+    books[bookNumber].innerHTML = `
+    <p>Title: ${myLibrary[bookNumber].title}</p>
+    <p>Author: ${myLibrary[bookNumber].author}</p>
+    <p>Genre: ${myLibrary[bookNumber].genre}</p>
+   <p> Read: ${myLibrary[bookNumber].read}</p>
+    `
 }
