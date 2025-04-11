@@ -94,7 +94,7 @@ form {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-/* Input fields to match the form style */
+/* Input fields */
 input[type="text"], input[type="submit"] {
     padding: 10px;
     border: 2px solid black;
