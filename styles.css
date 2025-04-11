@@ -14,7 +14,7 @@ body {
 .shelf {
     height: 80%;
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(6, 1fr);
     gap: 10px;
     padding: 10px;
@@ -66,3 +66,49 @@ body {
     margin-top: 20px;
 }
 
+/* Center the form and apply similar styles */
+form {
+    background-color: lightgrey;
+    outline: 2px solid black;
+    border-radius: 15px;
+    padding: 20px;
+    width: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    box-shadow: 4px 4px 4px 4px rgb(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Center the form on the page */
+#myDialog {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Input fields to match the form style */
+input[type="text"], input[type="submit"] {
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+input[type="submit"] {
+    background-color: lightgrey;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    filter: brightness(80%);
+}
